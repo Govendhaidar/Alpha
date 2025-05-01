@@ -40,7 +40,7 @@
                 <i class="gear fa-duotone fa-solid fa-gear" style="--fa-primary-opacity: 0.4; --fa-secondary-opacity: 01;"></i>
             </button>
 
-            <div id="notification-dropdown" class="dropdown dropdown-show">
+            <div id="notification-dropdown" class="dropdown">
                 <div class="dropdown-header">
                     <h4>Notification</h4>
                     <div class="badge-1 badge-red">0</div>
@@ -55,13 +55,12 @@
                         </div>
                         <span class="message">Govend Haidar signed in. <br /> </span>
                         <span class="time">10 min ago</span>
+                        <button class="btn-close-1"></button>
                     </div>
                 </div>
 
             </div>
           </div>
-
-
 
 
             <div id="account-container">
@@ -70,7 +69,7 @@
 
             </button>
 
-            <div id="account-dropdown" class="dropdown hide">
+            <div id="account-dropdown" class="dropdown">
                 <div class="dropdown-header">
                     <div class="account-name">
                             <img src="~/images/avatar.svg.svg" alt="template avatar" />
@@ -94,19 +93,19 @@
                     <div class="divider"></div>
 
                     <nav class="dropdown-actions">
-                    <a class="dropdown-action" href="#">
+                        <a class="dropdown-action" asp-controller="Auth" asp-action="Logout">
                         <i class="fa-duotone fa-solid fa-right-from-bracket"></i>
-                        <span>Logout</span>
-                    </a>
+                        <span>Logout </span>
+                        </a>                   
                     </nav>
                 </div>
             </div>
             </div>
 
 
-            @* <div class="header-top"> @
-    @ <a class="btn btn-blue btn-logout" asp-controller="Auth" asp-action="Logout">Log out</a> @
-    @ </div> *@
+     @*        <div class="header-top">  *@
+     @* <a class="btn btn-blue btn-logout" asp-controller="Auth" asp-action="Logout">Log out</a>  *@
+     @* </div> *@
         </div>
 
         <div class="main">

@@ -8,7 +8,8 @@
             <button type="button" class="btn-close" data-close="true"></button>
         </div>
 
-        <form novalidate method="post" asp-action="EditProject" asp-controller="Projects">
+        <form id="modalForm" novalidate method="post"  asp-action="EditProject" asp-controller="Projects">
+            <input asp-for="Id" type="hidden" />
 
             <div class="image-previewer circle">
                 <img src="" class="image-preview" />

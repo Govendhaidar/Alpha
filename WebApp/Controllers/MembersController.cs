@@ -25,7 +25,7 @@ namespace WebApp.Controllers
 
             // send data to clientService
 
-            return Ok(new { success = false });
+            return Ok(new { success = true });
         }
 
 
@@ -45,7 +45,7 @@ namespace WebApp.Controllers
             }
 
             // send data to clientService
-            return Ok(new { success = false });
+            return Ok(new { success = true });
         }
     }
 }
